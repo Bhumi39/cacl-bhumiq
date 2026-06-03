@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhumiq Pro – Premium Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glitter-layer"></div>
+  <div class="blob blob-one"></div>
+  <div class="blob blob-two"></div>
+  <div class="blob blob-three"></div>
+
+  <div class="emoji-rain" aria-hidden="true">
+    <span>🧮</span><span>✨</span><span>😂</span><span>➕</span><span>➖</span><span>✖️</span><span>➗</span>
+    <span>💫</span><span>🤓</span><span>🎉</span><span>🪄</span><span>📐</span>
+  </div>
+
+  <main class="page-wrap">
+    <section class="hero">
+      
+      <h1>Bhumiq</h1>
+      <p>Premium calculator experience by Bhumiq. Clean, confident, and built with history, clipboard copy, and powerful usability.</p>
+    </section>
+
+    <section class="calculator-zone">
+      <div class="mascot-card">
+        <div class="mascot">🦄</div>
+        <h2>Bhumiq's Maestro</h2>
+        <p id="funnyMessage">Calculator is thinking...</p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="screen">
+          <div class="mini-label">Current result</div>
+          <input id="display" type="text" value="0" readonly aria-label="Calculator display">
+        </div>
+
+        <div class="buttons">
+          <button class="btn control" data-action="clear">AC</button>
+          <button class="btn control" data-action="backspace">⌫</button>
+          <button class="btn operator" data-value="/">➗</button>
+          <button class="btn operator" data-value="*">✖️</button>
+
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="btn operator" data-value="-">➖</button>
+
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="btn operator" data-value="+">➕</button>
+
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn equal" data-action="equal">=</button>
+
+          <button class="btn zero" data-value="0">0</button>
+          <button class="btn" data-value=".">.</button>
+        </div>
+        <div class="extra-actions">
+          <button class="btn control" data-action="copy">COPY</button>
+        </div>
+        <div class="history-panel">
+          <div class="history-header">
+            <span>History</span>
+            <button class="btn control" data-action="clear-history">CLEAR</button>
+          </div>
+          <div id="historyList" class="history-list">
+            <p class="history-empty">No history yet. Calculate to save entries here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Bhumiq — made by Bhumi</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
