@@ -1,1 +1,3 @@
-[build]`npublish = "."`ncommand = ""
+[build]
+publish = "."
+command = ""
